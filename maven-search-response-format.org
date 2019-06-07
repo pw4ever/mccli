@@ -1,0 +1,278 @@
+* Maven Central search service API
+** Request Example
+
+#+begin_src shell
+  curl -o- https://search.maven.org/solrsearch/select\?q\=g:com.lihaoyi+a:ammonite_\*\&wt\=json\&rows\=10 | jq
+#+end_src
+
+** Response Example
+
+#+begin_src json
+
+  {
+    "responseHeader": {
+      "status": 0,
+      "QTime": 0,
+      "params": {
+        "q": "g:com.lihaoyi a:ammonite_*",
+        "indent": "off",
+        "spellcheck": "true",
+        "fl": "id,g,a,latestVersion,p,ec,repositoryId,text,timestamp,versionCount",
+        "spellcheck.count": "5",
+        "sort": "score desc,timestamp desc,g asc,a asc",
+        "rows": "10",
+        "wt": "json",
+        "version": "2.2"
+      }
+    },
+    "response": {
+      "numFound": 24,
+      "start": 0,
+      "docs": [
+        {
+          "id": "com.lihaoyi:ammonite_2.12.3",
+          "g": "com.lihaoyi",
+          "a": "ammonite_2.12.3",
+          "latestVersion": "1.6.7-2-c28002d",
+          "repositoryId": "central",
+          "p": "jar",
+          "timestamp": 1559817340000,
+          "versionCount": 170,
+          "text": [
+            "com.lihaoyi",
+            "ammonite_2.12.3",
+            "-sources.jar",
+            "-javadoc.jar",
+            ".jar",
+            ".pom"
+          ],
+          "ec": [
+            "-sources.jar",
+            "-javadoc.jar",
+            ".jar",
+            ".pom"
+          ]
+        },
+        {
+          "id": "com.lihaoyi:ammonite_2.12.2",
+          "g": "com.lihaoyi",
+          "a": "ammonite_2.12.2",
+          "latestVersion": "1.6.7-2-c28002d",
+          "repositoryId": "central",
+          "p": "jar",
+          "timestamp": 1559817333000,
+          "versionCount": 274,
+          "text": [
+            "com.lihaoyi",
+            "ammonite_2.12.2",
+            "-sources.jar",
+            "-javadoc.jar",
+            ".jar",
+            ".pom"
+          ],
+          "ec": [
+            "-sources.jar",
+            "-javadoc.jar",
+            ".jar",
+            ".pom"
+          ]
+        },
+        {
+          "id": "com.lihaoyi:ammonite_2.12.1",
+          "g": "com.lihaoyi",
+          "a": "ammonite_2.12.1",
+          "latestVersion": "1.6.7-2-c28002d",
+          "repositoryId": "central",
+          "p": "jar",
+          "timestamp": 1559817328000,
+          "versionCount": 300,
+          "text": [
+            "com.lihaoyi",
+            "ammonite_2.12.1",
+            "-sources.jar",
+            "-javadoc.jar",
+            ".jar",
+            ".pom"
+          ],
+          "ec": [
+            "-sources.jar",
+            "-javadoc.jar",
+            ".jar",
+            ".pom"
+          ]
+        },
+        {
+          "id": "com.lihaoyi:ammonite_2.12.0",
+          "g": "com.lihaoyi",
+          "a": "ammonite_2.12.0",
+          "latestVersion": "1.6.7-2-c28002d",
+          "repositoryId": "central",
+          "p": "jar",
+          "timestamp": 1559817323000,
+          "versionCount": 307,
+          "text": [
+            "com.lihaoyi",
+            "ammonite_2.12.0",
+            "-sources.jar",
+            "-javadoc.jar",
+            ".jar",
+            ".pom"
+          ],
+          "ec": [
+            "-sources.jar",
+            "-javadoc.jar",
+            ".jar",
+            ".pom"
+          ]
+        },
+        {
+          "id": "com.lihaoyi:ammonite_2.11.12",
+          "g": "com.lihaoyi",
+          "a": "ammonite_2.11.12",
+          "latestVersion": "1.6.7-2-c28002d",
+          "repositoryId": "central",
+          "p": "jar",
+          "timestamp": 1559817315000,
+          "versionCount": 134,
+          "text": [
+            "com.lihaoyi",
+            "ammonite_2.11.12",
+            "-sources.jar",
+            "-javadoc.jar",
+            ".jar",
+            ".pom"
+          ],
+          "ec": [
+            "-sources.jar",
+            "-javadoc.jar",
+            ".jar",
+            ".pom"
+          ]
+        },
+        {
+          "id": "com.lihaoyi:ammonite_2.11.11",
+          "g": "com.lihaoyi",
+          "a": "ammonite_2.11.11",
+          "latestVersion": "1.6.7-2-c28002d",
+          "repositoryId": "central",
+          "p": "jar",
+          "timestamp": 1559817299000,
+          "versionCount": 245,
+          "text": [
+            "com.lihaoyi",
+            "ammonite_2.11.11",
+            "-sources.jar",
+            "-javadoc.jar",
+            ".jar",
+            ".pom"
+          ],
+          "ec": [
+            "-sources.jar",
+            "-javadoc.jar",
+            ".jar",
+            ".pom"
+          ]
+        },
+        {
+          "id": "com.lihaoyi:ammonite_2.11.9",
+          "g": "com.lihaoyi",
+          "a": "ammonite_2.11.9",
+          "latestVersion": "1.6.7-2-c28002d",
+          "repositoryId": "central",
+          "p": "jar",
+          "timestamp": 1559817196000,
+          "versionCount": 95,
+          "text": [
+            "com.lihaoyi",
+            "ammonite_2.11.9",
+            "-sources.jar",
+            "-javadoc.jar",
+            ".jar",
+            ".pom"
+          ],
+          "ec": [
+            "-sources.jar",
+            "-javadoc.jar",
+            ".jar",
+            ".pom"
+          ]
+        },
+        {
+          "id": "com.lihaoyi:ammonite_2.11.8",
+          "g": "com.lihaoyi",
+          "a": "ammonite_2.11.8",
+          "latestVersion": "1.6.7-2-c28002d",
+          "repositoryId": "central",
+          "p": "jar",
+          "timestamp": 1559817180000,
+          "versionCount": 421,
+          "text": [
+            "com.lihaoyi",
+            "ammonite_2.11.8",
+            "-javadoc.jar",
+            "-sources.jar",
+            ".jar",
+            ".pom"
+          ],
+          "ec": [
+            "-javadoc.jar",
+            "-sources.jar",
+            ".jar",
+            ".pom"
+          ]
+        },
+        {
+          "id": "com.lihaoyi:ammonite_2.11.7",
+          "g": "com.lihaoyi",
+          "a": "ammonite_2.11.7",
+          "latestVersion": "1.6.7-2-c28002d",
+          "repositoryId": "central",
+          "p": "jar",
+          "timestamp": 1559817175000,
+          "versionCount": 424,
+          "text": [
+            "com.lihaoyi",
+            "ammonite_2.11.7",
+            "-javadoc.jar",
+            "-sources.jar",
+            ".jar",
+            ".pom"
+          ],
+          "ec": [
+            "-javadoc.jar",
+            "-sources.jar",
+            ".jar",
+            ".pom"
+          ]
+        },
+        {
+          "id": "com.lihaoyi:ammonite_2.11.6",
+          "g": "com.lihaoyi",
+          "a": "ammonite_2.11.6",
+          "latestVersion": "1.6.7-2-c28002d",
+          "repositoryId": "central",
+          "p": "jar",
+          "timestamp": 1559817170000,
+          "versionCount": 424,
+          "text": [
+            "com.lihaoyi",
+            "ammonite_2.11.6",
+            "-javadoc.jar",
+            "-sources.jar",
+            ".jar",
+            ".pom"
+          ],
+          "ec": [
+            "-javadoc.jar",
+            "-sources.jar",
+            ".jar",
+            ".pom"
+          ]
+        }
+      ]
+    },
+    "spellcheck": {
+      "suggestions": []
+    }
+  }
+#+end_src
