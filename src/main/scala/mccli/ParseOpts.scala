@@ -1,5 +1,7 @@
 package mccli.parseopts
 
+import scala.language.reflectiveCalls
+
 import mccli.globals._
 import org.rogach.scallop._
 
