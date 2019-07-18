@@ -1,5 +1,9 @@
 .idea/
 
+# Makefile non-source artifacts
+/coursier
+/mccli
+
 # Created by https://www.gitignore.io/api/sbt,linux,scala,intellij+all
 # Edit at https://www.gitignore.io/?templates=sbt,linux,scala,intellij+all
 
